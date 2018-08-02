@@ -1,6 +1,6 @@
 {
   "name": "clalert",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a simple alertview component",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
   "peerDependencies": {
     "react": ">= 15.x",
     "react-native": ">= 0.47.x",
-    "react-native-modal": ">= 6.0.x"
+    "react-native-modal": ">= 6.5.0"
   },
   "bugs": {
     "url": "https://github.com/xjuni0r87/CLAlert/issues"
