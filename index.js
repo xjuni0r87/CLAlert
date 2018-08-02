@@ -23,7 +23,7 @@ const ModalView = styled.View`
   marginHorizontal: 20px
   alignItems: center
   justifyContent: center
-  backgroundColor: 'white'
+  backgroundColor: white
   shadowColor: black
   shadowOpacity: 0.4
   elevation: 5
