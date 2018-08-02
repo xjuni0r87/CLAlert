@@ -90,7 +90,7 @@ const AlertView = props => {
           {subTitleText && <SubTitleText>{subTitleText}</SubTitleText>}
           <Row>
             {buttonCancelText && <SubmitButton onPress={() => onCancelPress(tag)} ><Text>{buttonCancelText}</Text></SubmitButton>}
-            {buttonDoneText && <SubmitButton onPress={() => onDonePress(tag)} ><Text>{buttonDoneText}</Text> </SubmitButton>}
+            {buttonDoneText && <SubmitButton onPress={() => onDonePress(tag)} ><Text>{buttonDoneText}</Text></SubmitButton>}
           </Row>
         </InnerModalContainer>
       </ModalView>
