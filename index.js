@@ -1,5 +1,7 @@
 import React from 'react'
+import { Text } from 'react-native'
 import PropTypes from 'prop-types'
+import styled from 'styled-components/native'
 import Modal from 'react-native-modal'
 
 const propTypes = {
@@ -76,9 +78,9 @@ const AlertView = props => {
       animationInTiming={500}
       animationOut={'fadeOut'}
       animationOutTiming={500}
-      backdropColor={colors.backdrop}
+      backdropColor={'gray'}
       onBackdropPress={isCancellable ? () => onCancelPress(tag) : null}
-      style={{ margin: 0, marginTop: margins.navbarWithStatusHeight, justifyContent: 'center' }}
+      style={{ margin: 0, justifyContent: 'center' }}
     >
       <ModalView>
         <InnerModalContainer>
@@ -87,8 +89,8 @@ const AlertView = props => {
           {titleText && <TitleText>{titleText}</TitleText>}
           {subTitleText && <SubTitleText>{subTitleText}</SubTitleText>}
           <Row>
-            {buttonCancelText && <SubmitButton negative={isCancelNegative} color={cancelColor} title={buttonCancelText} onPress={() => onCancelPress(tag)} />}
-            {buttonDoneText && <SubmitButton title={buttonDoneText} onPress={() => onDonePress(tag)} />}
+            {buttonCancelText && <SubmitButton onPress={() => onCancelPress(tag)} ><Text>{buttonCancelText}</Text></SubmitButton>}
+            {buttonDoneText && <SubmitButton onPress={() => onDonePress(tag)} ><Text>{buttonDoneText}</Text> </SubmitButton>}
           </Row>
         </InnerModalContainer>
       </ModalView>
